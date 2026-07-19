@@ -1,6 +1,7 @@
 #include<iostream>
 #include<algorithm>
 #include<vector>
+#include<climits>
 using namespace std;
 int main()
 {
@@ -18,7 +19,7 @@ int main()
         continue;
         }
         else{
-        int minim=500;
+        int minim=INT_MAX;
         for(int i=1;i<n;i++){
             if(arr[i]-arr[i-1]<minim)
             minim=arr[i]-arr[i-1];
